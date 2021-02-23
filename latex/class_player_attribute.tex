@@ -1,0 +1,194 @@
+\hypertarget{class_player_attribute}{}\doxysection{Player\+Attribute Class Reference}
+\label{class_player_attribute}\index{PlayerAttribute@{PlayerAttribute}}
+
+
+This class carries information of the player, lives and score.  
+
+
+
+
+{\ttfamily \#include $<$game\+Objects.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_attribute_a7d32485d30ca3a707db1d59e13b21bb9}{Player\+Attribute}} ()
+\item 
+\mbox{\hyperlink{class_player_attribute_a1b908a0a8d72fcd8dd6ad9b2800a87e1}{Player\+Attribute}} (\mbox{\hyperlink{class_vec}{Vec}} vec\+Score, \mbox{\hyperlink{class_vec}{Vec}} vec\+Lives, SDL\+\_\+\+Renderer $\ast$r, TTF\+\_\+\+Font $\ast$f)
+\item 
+void \mbox{\hyperlink{class_player_attribute_ac57c4249d9e4a69ae6edf2171d1d9e59}{set\+Score}} (int \mbox{\hyperlink{class_player_attribute_ad5126ea4366155585195fdbf15052f76}{score}})
+\item 
+void \mbox{\hyperlink{class_player_attribute_a8297859dc76cea3b688428fee145f67d}{set\+Lives}} (int \mbox{\hyperlink{class_player_attribute_a30410ec3c15768da93e35e23e4a59492}{lives}})
+\item 
+void \mbox{\hyperlink{class_player_attribute_ae3b2dae340aba61bf19dfc17ebd64c68}{draw\+Score}} ()
+\item 
+void \mbox{\hyperlink{class_player_attribute_a26bf0b45fa15be19a3f065dce3061b3f}{draw\+Lives}} ()
+\item 
+void \mbox{\hyperlink{class_player_attribute_ac41ba98753c59e96f922710c72fe21bb}{set\+Lang}} (Resource\+Type type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_player_attribute_ad5126ea4366155585195fdbf15052f76}{score}}
+\item 
+int \mbox{\hyperlink{class_player_attribute_a30410ec3c15768da93e35e23e4a59492}{lives}}
+\item 
+TTF\+\_\+\+Font $\ast$ \mbox{\hyperlink{class_player_attribute_ae6a4b14f7d65e4269d164fb03637f0fa}{font}}
+\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{class_player_attribute_ad0d30809a849e7676e5979030bb11916}{renderer}}
+\item 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{class_player_attribute_a17370cd4e29df9ffcd0aac742ced8325}{live\+Surface}}
+\item 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{class_player_attribute_aa46cc9c18fe975626c866cbf9c0fa2e2}{score\+Surface}}
+\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_player_attribute_a33ccd6a593fd4508e5ada405fc10725c}{live\+Texture}}
+\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_player_attribute_a9386f08020e8633eca65dd0a73448009}{score\+Texture}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_player_attribute_a9443e2aae2512a5c4334c428d0acf5a0}{live\+Rect}} \{\}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_player_attribute_a924551a259911bf1a758bd42b0b771e5}{score\+Rect}} \{\}
+\item 
+bool \mbox{\hyperlink{class_player_attribute_a6fa71963b919c59ce42109e2d7262b08}{is\+English}}
+\item 
+std\+::string \mbox{\hyperlink{class_player_attribute_ab5665259e6e58ee99865f19a823ef503}{score\+Handle}}
+\item 
+std\+::string \mbox{\hyperlink{class_player_attribute_ae9c78bcb0e49a0e01bcedf8313d41e2e}{live\+Handle}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class carries information of the player, lives and score. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_attribute_a7d32485d30ca3a707db1d59e13b21bb9}\label{class_player_attribute_a7d32485d30ca3a707db1d59e13b21bb9}} 
+\index{PlayerAttribute@{PlayerAttribute}!PlayerAttribute@{PlayerAttribute}}
+\index{PlayerAttribute@{PlayerAttribute}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{PlayerAttribute()}{PlayerAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Player\+Attribute\+::\+Player\+Attribute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor only used for preventing compiler complaints. \mbox{\Hypertarget{class_player_attribute_a1b908a0a8d72fcd8dd6ad9b2800a87e1}\label{class_player_attribute_a1b908a0a8d72fcd8dd6ad9b2800a87e1}} 
+\index{PlayerAttribute@{PlayerAttribute}!PlayerAttribute@{PlayerAttribute}}
+\index{PlayerAttribute@{PlayerAttribute}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{PlayerAttribute()}{PlayerAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Player\+Attribute\+::\+Player\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec}{Vec}}}]{vec\+Score,  }\item[{\mbox{\hyperlink{class_vec}{Vec}}}]{vec\+Lives,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{r,  }\item[{TTF\+\_\+\+Font $\ast$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+set up all the member fields declared, preparing for later rendering 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_attribute_a26bf0b45fa15be19a3f065dce3061b3f}\label{class_player_attribute_a26bf0b45fa15be19a3f065dce3061b3f}} 
+\index{PlayerAttribute@{PlayerAttribute}!drawLives@{drawLives}}
+\index{drawLives@{drawLives}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{drawLives()}{drawLives()}}
+{\footnotesize\ttfamily void Player\+Attribute\+::draw\+Lives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+using buffered renderer to render texture on the window \mbox{\Hypertarget{class_player_attribute_ae3b2dae340aba61bf19dfc17ebd64c68}\label{class_player_attribute_ae3b2dae340aba61bf19dfc17ebd64c68}} 
+\index{PlayerAttribute@{PlayerAttribute}!drawScore@{drawScore}}
+\index{drawScore@{drawScore}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{drawScore()}{drawScore()}}
+{\footnotesize\ttfamily void Player\+Attribute\+::draw\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+using buffered renderer to render texture on the window \mbox{\Hypertarget{class_player_attribute_ac41ba98753c59e96f922710c72fe21bb}\label{class_player_attribute_ac41ba98753c59e96f922710c72fe21bb}} 
+\index{PlayerAttribute@{PlayerAttribute}!setLang@{setLang}}
+\index{setLang@{setLang}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{setLang()}{setLang()}}
+{\footnotesize\ttfamily void Player\+Attribute\+::set\+Lang (\begin{DoxyParamCaption}\item[{Resource\+Type}]{type }\end{DoxyParamCaption})}
+
+set current language the game is using \mbox{\Hypertarget{class_player_attribute_a8297859dc76cea3b688428fee145f67d}\label{class_player_attribute_a8297859dc76cea3b688428fee145f67d}} 
+\index{PlayerAttribute@{PlayerAttribute}!setLives@{setLives}}
+\index{setLives@{setLives}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{setLives()}{setLives()}}
+{\footnotesize\ttfamily void Player\+Attribute\+::set\+Lives (\begin{DoxyParamCaption}\item[{int}]{lives }\end{DoxyParamCaption})}
+
+setter method setting current lives \mbox{\Hypertarget{class_player_attribute_ac57c4249d9e4a69ae6edf2171d1d9e59}\label{class_player_attribute_ac57c4249d9e4a69ae6edf2171d1d9e59}} 
+\index{PlayerAttribute@{PlayerAttribute}!setScore@{setScore}}
+\index{setScore@{setScore}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily void Player\+Attribute\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+setter method setting current score 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_player_attribute_ae6a4b14f7d65e4269d164fb03637f0fa}\label{class_player_attribute_ae6a4b14f7d65e4269d164fb03637f0fa}} 
+\index{PlayerAttribute@{PlayerAttribute}!font@{font}}
+\index{font@{font}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily TTF\+\_\+\+Font$\ast$ Player\+Attribute\+::font}
+
+font used for rendering the text \mbox{\Hypertarget{class_player_attribute_a6fa71963b919c59ce42109e2d7262b08}\label{class_player_attribute_a6fa71963b919c59ce42109e2d7262b08}} 
+\index{PlayerAttribute@{PlayerAttribute}!isEnglish@{isEnglish}}
+\index{isEnglish@{isEnglish}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{isEnglish}{isEnglish}}
+{\footnotesize\ttfamily bool Player\+Attribute\+::is\+English}
+
+a flag indicating the current language the game is using \mbox{\Hypertarget{class_player_attribute_ae9c78bcb0e49a0e01bcedf8313d41e2e}\label{class_player_attribute_ae9c78bcb0e49a0e01bcedf8313d41e2e}} 
+\index{PlayerAttribute@{PlayerAttribute}!liveHandle@{liveHandle}}
+\index{liveHandle@{liveHandle}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{liveHandle}{liveHandle}}
+{\footnotesize\ttfamily std\+::string Player\+Attribute\+::live\+Handle}
+
+the handle for describing the lives \mbox{\Hypertarget{class_player_attribute_a9443e2aae2512a5c4334c428d0acf5a0}\label{class_player_attribute_a9443e2aae2512a5c4334c428d0acf5a0}} 
+\index{PlayerAttribute@{PlayerAttribute}!liveRect@{liveRect}}
+\index{liveRect@{liveRect}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{liveRect}{liveRect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Player\+Attribute\+::live\+Rect \{\}}
+
+describes where the lives text will be shown as well as the size of it \mbox{\Hypertarget{class_player_attribute_a30410ec3c15768da93e35e23e4a59492}\label{class_player_attribute_a30410ec3c15768da93e35e23e4a59492}} 
+\index{PlayerAttribute@{PlayerAttribute}!lives@{lives}}
+\index{lives@{lives}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{lives}{lives}}
+{\footnotesize\ttfamily int Player\+Attribute\+::lives}
+
+the current remaining lives \mbox{\Hypertarget{class_player_attribute_a17370cd4e29df9ffcd0aac742ced8325}\label{class_player_attribute_a17370cd4e29df9ffcd0aac742ced8325}} 
+\index{PlayerAttribute@{PlayerAttribute}!liveSurface@{liveSurface}}
+\index{liveSurface@{liveSurface}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{liveSurface}{liveSurface}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface$\ast$ Player\+Attribute\+::live\+Surface}
+
+surface for live \mbox{\Hypertarget{class_player_attribute_a33ccd6a593fd4508e5ada405fc10725c}\label{class_player_attribute_a33ccd6a593fd4508e5ada405fc10725c}} 
+\index{PlayerAttribute@{PlayerAttribute}!liveTexture@{liveTexture}}
+\index{liveTexture@{liveTexture}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{liveTexture}{liveTexture}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ Player\+Attribute\+::live\+Texture}
+
+texture for live \mbox{\Hypertarget{class_player_attribute_ad0d30809a849e7676e5979030bb11916}\label{class_player_attribute_ad0d30809a849e7676e5979030bb11916}} 
+\index{PlayerAttribute@{PlayerAttribute}!renderer@{renderer}}
+\index{renderer@{renderer}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer$\ast$ Player\+Attribute\+::renderer}
+
+renderer used for rendering \mbox{\Hypertarget{class_player_attribute_ad5126ea4366155585195fdbf15052f76}\label{class_player_attribute_ad5126ea4366155585195fdbf15052f76}} 
+\index{PlayerAttribute@{PlayerAttribute}!score@{score}}
+\index{score@{score}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Player\+Attribute\+::score}
+
+the current score \mbox{\Hypertarget{class_player_attribute_ab5665259e6e58ee99865f19a823ef503}\label{class_player_attribute_ab5665259e6e58ee99865f19a823ef503}} 
+\index{PlayerAttribute@{PlayerAttribute}!scoreHandle@{scoreHandle}}
+\index{scoreHandle@{scoreHandle}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{scoreHandle}{scoreHandle}}
+{\footnotesize\ttfamily std\+::string Player\+Attribute\+::score\+Handle}
+
+the handle for the describing the score \mbox{\Hypertarget{class_player_attribute_a924551a259911bf1a758bd42b0b771e5}\label{class_player_attribute_a924551a259911bf1a758bd42b0b771e5}} 
+\index{PlayerAttribute@{PlayerAttribute}!scoreRect@{scoreRect}}
+\index{scoreRect@{scoreRect}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{scoreRect}{scoreRect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Player\+Attribute\+::score\+Rect \{\}}
+
+describes where the score text will be shown as well as the size of it \mbox{\Hypertarget{class_player_attribute_aa46cc9c18fe975626c866cbf9c0fa2e2}\label{class_player_attribute_aa46cc9c18fe975626c866cbf9c0fa2e2}} 
+\index{PlayerAttribute@{PlayerAttribute}!scoreSurface@{scoreSurface}}
+\index{scoreSurface@{scoreSurface}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{scoreSurface}{scoreSurface}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface$\ast$ Player\+Attribute\+::score\+Surface}
+
+surface for score \mbox{\Hypertarget{class_player_attribute_a9386f08020e8633eca65dd0a73448009}\label{class_player_attribute_a9386f08020e8633eca65dd0a73448009}} 
+\index{PlayerAttribute@{PlayerAttribute}!scoreTexture@{scoreTexture}}
+\index{scoreTexture@{scoreTexture}!PlayerAttribute@{PlayerAttribute}}
+\doxysubsubsection{\texorpdfstring{scoreTexture}{scoreTexture}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ Player\+Attribute\+::score\+Texture}
+
+texture for score 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game\+Objects.\+hpp\end{DoxyCompactItemize}

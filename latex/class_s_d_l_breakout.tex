@@ -1,0 +1,170 @@
+\hypertarget{class_s_d_l_breakout}{}\doxysection{SDLBreakout Class Reference}
+\label{class_s_d_l_breakout}\index{SDLBreakout@{SDLBreakout}}
+
+
+This class represents the breakout game itself.  
+
+
+
+
+{\ttfamily \#include $<$SDLBreakout.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_d_l_breakout_adc9f49f239e376ef331cb781d3804789}{SDLBreakout}} (int w, int h)
+\item 
+\mbox{\hyperlink{class_s_d_l_breakout_a174210104adcb6f27360f7a457f1a7ed}{$\sim$\+SDLBreakout}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_breakout_ad0cce856cc0856e4937138cb1141bf39}{process\+Input}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_breakout_ae0089c8613c2abb0ce5fd35e27551e20}{update}} (float delta\+Time)
+\item 
+void \mbox{\hyperlink{class_s_d_l_breakout_a549ce3eed1ee476c8487d1f181cdd6b6}{render}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_breakout_a2d4cedb9e80e36f414d3fcfd570e8165}{loop}} ()
+\item 
+SDL\+\_\+\+Window $\ast$ \mbox{\hyperlink{class_s_d_l_breakout_a244cf3dadbc103c264b17d214111d937}{get\+SDLWindow}} ()
+\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{class_s_d_l_breakout_a952cacaf8b4c0040b9f243c4c4a6fe92}{get\+SDLRenderer}} ()
+\item 
+\mbox{\hyperlink{struct_contact}{Contact}} \mbox{\hyperlink{class_s_d_l_breakout_ac7d5572f065dc17b793b4de84b73da51}{is\+Collision\+With\+Paddle}} ()
+\item 
+\mbox{\hyperlink{struct_contact}{Contact}} \mbox{\hyperlink{class_s_d_l_breakout_a08f2f14f1ac67d63213b0fd601ceea74}{is\+Collision\+With\+Wall}} ()
+\item 
+\mbox{\hyperlink{struct_contact}{Contact}} \mbox{\hyperlink{class_s_d_l_breakout_ae39778e50995f358837cd411760d3f97}{is\+Collision\+With\+Brick}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_breakout_a1d3f12dbf3f670b77d0e14172d84e94f}{game\+Over\+Window}} (bool has\+Won)
+\item 
+void \mbox{\hyperlink{class_s_d_l_breakout_a4d1c9a0e19c60c20aba5137e55cf94e0}{reset\+Game}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_breakout_ab2f5db1d7d6955e2caa16b5e91a9c74a}{start\+Game}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_breakout_a1a2ab150e4a6a7cbc671421b039ffd3d}{set\+Lang}} (Resource\+Type type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the breakout game itself. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s_d_l_breakout_adc9f49f239e376ef331cb781d3804789}\label{class_s_d_l_breakout_adc9f49f239e376ef331cb781d3804789}} 
+\index{SDLBreakout@{SDLBreakout}!SDLBreakout@{SDLBreakout}}
+\index{SDLBreakout@{SDLBreakout}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{SDLBreakout()}{SDLBreakout()}}
+{\footnotesize\ttfamily SDLBreakout\+::\+SDLBreakout (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Constructor, it initializes all the game resources we need, preparing for the main loop which will start the game visually. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em w} & width of the window \\
+\hline
+\mbox{\texttt{ in}}  & {\em h} & height of the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_breakout_a174210104adcb6f27360f7a457f1a7ed}\label{class_s_d_l_breakout_a174210104adcb6f27360f7a457f1a7ed}} 
+\index{SDLBreakout@{SDLBreakout}!````~SDLBreakout@{$\sim$SDLBreakout}}
+\index{````~SDLBreakout@{$\sim$SDLBreakout}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{$\sim$SDLBreakout()}{~SDLBreakout()}}
+{\footnotesize\ttfamily SDLBreakout\+::$\sim$\+SDLBreakout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+releases/frees all the resources loaded in the constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_d_l_breakout_a1d3f12dbf3f670b77d0e14172d84e94f}\label{class_s_d_l_breakout_a1d3f12dbf3f670b77d0e14172d84e94f}} 
+\index{SDLBreakout@{SDLBreakout}!gameOverWindow@{gameOverWindow}}
+\index{gameOverWindow@{gameOverWindow}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{gameOverWindow()}{gameOverWindow()}}
+{\footnotesize\ttfamily void SDLBreakout\+::game\+Over\+Window (\begin{DoxyParamCaption}\item[{bool}]{has\+Won }\end{DoxyParamCaption})}
+
+displays the window where it shows message indicating either the player has won or has lost 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em has\+Won} & true if player has won the game, false otherwise \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_breakout_a952cacaf8b4c0040b9f243c4c4a6fe92}\label{class_s_d_l_breakout_a952cacaf8b4c0040b9f243c4c4a6fe92}} 
+\index{SDLBreakout@{SDLBreakout}!getSDLRenderer@{getSDLRenderer}}
+\index{getSDLRenderer@{getSDLRenderer}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{getSDLRenderer()}{getSDLRenderer()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer$\ast$ SDLBreakout\+::get\+SDLRenderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a handy getter method to retrieve our renderer pointer \mbox{\Hypertarget{class_s_d_l_breakout_a244cf3dadbc103c264b17d214111d937}\label{class_s_d_l_breakout_a244cf3dadbc103c264b17d214111d937}} 
+\index{SDLBreakout@{SDLBreakout}!getSDLWindow@{getSDLWindow}}
+\index{getSDLWindow@{getSDLWindow}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{getSDLWindow()}{getSDLWindow()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window$\ast$ SDLBreakout\+::get\+SDLWindow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a handy getter method to retrieve our window pointer \mbox{\Hypertarget{class_s_d_l_breakout_ae39778e50995f358837cd411760d3f97}\label{class_s_d_l_breakout_ae39778e50995f358837cd411760d3f97}} 
+\index{SDLBreakout@{SDLBreakout}!isCollisionWithBrick@{isCollisionWithBrick}}
+\index{isCollisionWithBrick@{isCollisionWithBrick}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{isCollisionWithBrick()}{isCollisionWithBrick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_contact}{Contact}} SDLBreakout\+::is\+Collision\+With\+Brick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+checks if there is any collision between the ball and paddle @recval contact this is filled with the contact type and penetration of the ball. \mbox{\Hypertarget{class_s_d_l_breakout_ac7d5572f065dc17b793b4de84b73da51}\label{class_s_d_l_breakout_ac7d5572f065dc17b793b4de84b73da51}} 
+\index{SDLBreakout@{SDLBreakout}!isCollisionWithPaddle@{isCollisionWithPaddle}}
+\index{isCollisionWithPaddle@{isCollisionWithPaddle}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{isCollisionWithPaddle()}{isCollisionWithPaddle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_contact}{Contact}} SDLBreakout\+::is\+Collision\+With\+Paddle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+checks if there is any collision between the ball and paddle @recval contact this is filled with the contact type and penetration of the ball. \mbox{\Hypertarget{class_s_d_l_breakout_a08f2f14f1ac67d63213b0fd601ceea74}\label{class_s_d_l_breakout_a08f2f14f1ac67d63213b0fd601ceea74}} 
+\index{SDLBreakout@{SDLBreakout}!isCollisionWithWall@{isCollisionWithWall}}
+\index{isCollisionWithWall@{isCollisionWithWall}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{isCollisionWithWall()}{isCollisionWithWall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_contact}{Contact}} SDLBreakout\+::is\+Collision\+With\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+checks if there is any collision between the ball and paddle @recval contact this is filled with the contact type and penetration of the ball. \mbox{\Hypertarget{class_s_d_l_breakout_a2d4cedb9e80e36f414d3fcfd570e8165}\label{class_s_d_l_breakout_a2d4cedb9e80e36f414d3fcfd570e8165}} 
+\index{SDLBreakout@{SDLBreakout}!loop@{loop}}
+\index{loop@{loop}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void SDLBreakout\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this is the mainloop of the game, it processes input, update game objects, and then renders all the game objects and window, this is a conditionally infinite loop. \mbox{\Hypertarget{class_s_d_l_breakout_ad0cce856cc0856e4937138cb1141bf39}\label{class_s_d_l_breakout_ad0cce856cc0856e4937138cb1141bf39}} 
+\index{SDLBreakout@{SDLBreakout}!processInput@{processInput}}
+\index{processInput@{processInput}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{processInput()}{processInput()}}
+{\footnotesize\ttfamily void SDLBreakout\+::process\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this method detects and processes the user keyboard input and handles those events \mbox{\Hypertarget{class_s_d_l_breakout_a549ce3eed1ee476c8487d1f181cdd6b6}\label{class_s_d_l_breakout_a549ce3eed1ee476c8487d1f181cdd6b6}} 
+\index{SDLBreakout@{SDLBreakout}!render@{render}}
+\index{render@{render}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void SDLBreakout\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this methods simply uses the renderer to draw all the objects in the game \mbox{\Hypertarget{class_s_d_l_breakout_a4d1c9a0e19c60c20aba5137e55cf94e0}\label{class_s_d_l_breakout_a4d1c9a0e19c60c20aba5137e55cf94e0}} 
+\index{SDLBreakout@{SDLBreakout}!resetGame@{resetGame}}
+\index{resetGame@{resetGame}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{resetGame()}{resetGame()}}
+{\footnotesize\ttfamily void SDLBreakout\+::reset\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+resets all the game state, including ball, paddle, bricks, button state, as well as the lives and score player has \mbox{\Hypertarget{class_s_d_l_breakout_a1a2ab150e4a6a7cbc671421b039ffd3d}\label{class_s_d_l_breakout_a1a2ab150e4a6a7cbc671421b039ffd3d}} 
+\index{SDLBreakout@{SDLBreakout}!setLang@{setLang}}
+\index{setLang@{setLang}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{setLang()}{setLang()}}
+{\footnotesize\ttfamily void SDLBreakout\+::set\+Lang (\begin{DoxyParamCaption}\item[{Resource\+Type}]{type }\end{DoxyParamCaption})}
+
+set game language to the type passed in 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em type} & the language type that\textquotesingle{}s desired \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_breakout_ab2f5db1d7d6955e2caa16b5e91a9c74a}\label{class_s_d_l_breakout_ab2f5db1d7d6955e2caa16b5e91a9c74a}} 
+\index{SDLBreakout@{SDLBreakout}!startGame@{startGame}}
+\index{startGame@{startGame}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
+{\footnotesize\ttfamily void SDLBreakout\+::start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this is the window that will show when the game is opened, player may choose language at this stage \mbox{\Hypertarget{class_s_d_l_breakout_ae0089c8613c2abb0ce5fd35e27551e20}\label{class_s_d_l_breakout_ae0089c8613c2abb0ce5fd35e27551e20}} 
+\index{SDLBreakout@{SDLBreakout}!update@{update}}
+\index{update@{update}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void SDLBreakout\+::update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+this methods update all the game objects based on the time step passed in 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em delta\+Time} & time step on which the update of position is based \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+SDLBreakout.\+hpp\end{DoxyCompactItemize}

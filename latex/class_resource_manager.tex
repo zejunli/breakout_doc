@@ -1,0 +1,139 @@
+\hypertarget{class_resource_manager}{}\doxysection{Resource\+Manager Class Reference}
+\label{class_resource_manager}\index{ResourceManager@{ResourceManager}}
+
+
+This is a singleton class used for managing the resources in the game.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_resource_manager_a5fd366418949e59273bd2c208603993b}{start\+Up}} ()
+\item 
+void \mbox{\hyperlink{class_resource_manager_a6db779a2721e927cffb9f0c7ab31495c}{shut\+Down}} ()
+\item 
+bool \mbox{\hyperlink{class_resource_manager_a2c9b3925176c310a80faf400b10b4f1b}{has\+Resource}} (std\+::string const \&file\+Path, Resource\+Type type)
+\item 
+int \mbox{\hyperlink{class_resource_manager_ad27f1d8cc686f277f4bfcb6e20bcd664}{add\+Resource}} (std\+::string const \&file\+Path, Resource\+Type type, int font\+Size=25)
+\item 
+void \mbox{\hyperlink{class_resource_manager_a8a9292a100187982ea82ee4d3dcada50}{load\+Language}} (std\+::string const \&file\+Path, Resource\+Type type)
+\item 
+void \mbox{\hyperlink{class_resource_manager_a087552167cd5d968b7fd709cb998ff3b}{build\+English\+Spanish\+Bijection}} ()
+\item 
+Mix\+\_\+\+Chunk $\ast$ \mbox{\hyperlink{class_resource_manager_a8e15dbba4e880d9739b5e2525f746b35}{get\+Resource\+Sound\+Effect}} (std\+::string const \&file\+Path)
+\item 
+Mix\+\_\+\+Music $\ast$ \mbox{\hyperlink{class_resource_manager_ad8745ce919a160d71039baa145d5838e}{get\+Resource\+Background\+Music}} (std\+::string const \&file\+Path)
+\item 
+TTF\+\_\+\+Font $\ast$ \mbox{\hyperlink{class_resource_manager_a737c4f97a68aab905abba50f4b37f808}{get\+Resource\+Font}} (std\+::string const \&file\+Path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} \& \mbox{\hyperlink{class_resource_manager_a8fd3155e6658c0bdc3b3f6f81443e374}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{class_resource_manager_a128daa04b4d629ba399656bf8a2a6add}{map\+English\+To\+Spanish}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{class_resource_manager_aafea504c4d917a29e48510848df0d39a}{map\+Spanish\+To\+English}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a singleton class used for managing the resources in the game. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_ad27f1d8cc686f277f4bfcb6e20bcd664}\label{class_resource_manager_ad27f1d8cc686f277f4bfcb6e20bcd664}} 
+\index{ResourceManager@{ResourceManager}!addResource@{addResource}}
+\index{addResource@{addResource}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{addResource()}{addResource()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::add\+Resource (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{file\+Path,  }\item[{Resource\+Type}]{type,  }\item[{int}]{font\+Size = {\ttfamily 25} }\end{DoxyParamCaption})}
+
+add a resource, the type of the resource should be provided 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file\+Path} & the file path of the resource to be loaded \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & the type of this resource, so the manager knows where to store it \\
+\hline
+\mbox{\texttt{ in}}  & {\em font\+Size} & this is the default font size for the font to be loaded \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_resource_manager_a087552167cd5d968b7fd709cb998ff3b}\label{class_resource_manager_a087552167cd5d968b7fd709cb998ff3b}} 
+\index{ResourceManager@{ResourceManager}!buildEnglishSpanishBijection@{buildEnglishSpanishBijection}}
+\index{buildEnglishSpanishBijection@{buildEnglishSpanishBijection}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{buildEnglishSpanishBijection()}{buildEnglishSpanishBijection()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::build\+English\+Spanish\+Bijection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+set up map from english to spanish \mbox{\Hypertarget{class_resource_manager_a8fd3155e6658c0bdc3b3f6f81443e374}\label{class_resource_manager_a8fd3155e6658c0bdc3b3f6f81443e374}} 
+\index{ResourceManager@{ResourceManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}\& Resource\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns the only instance of this class, if it doesn\textquotesingle{}t exist yet, it will create the instance first \mbox{\Hypertarget{class_resource_manager_ad8745ce919a160d71039baa145d5838e}\label{class_resource_manager_ad8745ce919a160d71039baa145d5838e}} 
+\index{ResourceManager@{ResourceManager}!getResourceBackgroundMusic@{getResourceBackgroundMusic}}
+\index{getResourceBackgroundMusic@{getResourceBackgroundMusic}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getResourceBackgroundMusic()}{getResourceBackgroundMusic()}}
+{\footnotesize\ttfamily Mix\+\_\+\+Music$\ast$ Resource\+Manager\+::get\+Resource\+Background\+Music (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{file\+Path }\end{DoxyParamCaption})}
+
+get background music resource based on the filepath provided \mbox{\Hypertarget{class_resource_manager_a737c4f97a68aab905abba50f4b37f808}\label{class_resource_manager_a737c4f97a68aab905abba50f4b37f808}} 
+\index{ResourceManager@{ResourceManager}!getResourceFont@{getResourceFont}}
+\index{getResourceFont@{getResourceFont}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getResourceFont()}{getResourceFont()}}
+{\footnotesize\ttfamily TTF\+\_\+\+Font$\ast$ Resource\+Manager\+::get\+Resource\+Font (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{file\+Path }\end{DoxyParamCaption})}
+
+get font resource based on the filepath provided \mbox{\Hypertarget{class_resource_manager_a8e15dbba4e880d9739b5e2525f746b35}\label{class_resource_manager_a8e15dbba4e880d9739b5e2525f746b35}} 
+\index{ResourceManager@{ResourceManager}!getResourceSoundEffect@{getResourceSoundEffect}}
+\index{getResourceSoundEffect@{getResourceSoundEffect}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getResourceSoundEffect()}{getResourceSoundEffect()}}
+{\footnotesize\ttfamily Mix\+\_\+\+Chunk$\ast$ Resource\+Manager\+::get\+Resource\+Sound\+Effect (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{file\+Path }\end{DoxyParamCaption})}
+
+get sound effect resource based on the filepath provided \mbox{\Hypertarget{class_resource_manager_a2c9b3925176c310a80faf400b10b4f1b}\label{class_resource_manager_a2c9b3925176c310a80faf400b10b4f1b}} 
+\index{ResourceManager@{ResourceManager}!hasResource@{hasResource}}
+\index{hasResource@{hasResource}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{hasResource()}{hasResource()}}
+{\footnotesize\ttfamily bool Resource\+Manager\+::has\+Resource (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{file\+Path,  }\item[{Resource\+Type}]{type }\end{DoxyParamCaption})}
+
+check if the designated resource is loaded this should be used before calling a getter method \mbox{\Hypertarget{class_resource_manager_a8a9292a100187982ea82ee4d3dcada50}\label{class_resource_manager_a8a9292a100187982ea82ee4d3dcada50}} 
+\index{ResourceManager@{ResourceManager}!loadLanguage@{loadLanguage}}
+\index{loadLanguage@{loadLanguage}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{loadLanguage()}{loadLanguage()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::load\+Language (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{file\+Path,  }\item[{Resource\+Type}]{type }\end{DoxyParamCaption})}
+
+load different language text for the game \mbox{\Hypertarget{class_resource_manager_a6db779a2721e927cffb9f0c7ab31495c}\label{class_resource_manager_a6db779a2721e927cffb9f0c7ab31495c}} 
+\index{ResourceManager@{ResourceManager}!shutDown@{shutDown}}
+\index{shutDown@{shutDown}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{shutDown()}{shutDown()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::shut\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+free all resources loaded \mbox{\Hypertarget{class_resource_manager_a5fd366418949e59273bd2c208603993b}\label{class_resource_manager_a5fd366418949e59273bd2c208603993b}} 
+\index{ResourceManager@{ResourceManager}!startUp@{startUp}}
+\index{startUp@{startUp}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{startUp()}{startUp()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::start\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+initializes all containers preparing for later usage 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_resource_manager_a128daa04b4d629ba399656bf8a2a6add}\label{class_resource_manager_a128daa04b4d629ba399656bf8a2a6add}} 
+\index{ResourceManager@{ResourceManager}!mapEnglishToSpanish@{mapEnglishToSpanish}}
+\index{mapEnglishToSpanish@{mapEnglishToSpanish}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{mapEnglishToSpanish}{mapEnglishToSpanish}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, std\+::string$>$ Resource\+Manager\+::map\+English\+To\+Spanish}
+
+maps English strings to Spanish strings \mbox{\Hypertarget{class_resource_manager_aafea504c4d917a29e48510848df0d39a}\label{class_resource_manager_aafea504c4d917a29e48510848df0d39a}} 
+\index{ResourceManager@{ResourceManager}!mapSpanishToEnglish@{mapSpanishToEnglish}}
+\index{mapSpanishToEnglish@{mapSpanishToEnglish}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{mapSpanishToEnglish}{mapSpanishToEnglish}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, std\+::string$>$ Resource\+Manager\+::map\+Spanish\+To\+English}
+
+maps Spanish strings to English strings 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Resource\+Manager.\+hpp\end{DoxyCompactItemize}

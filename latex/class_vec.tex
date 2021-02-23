@@ -1,0 +1,90 @@
+\hypertarget{class_vec}{}\doxysection{Vec Class Reference}
+\label{class_vec}\index{Vec@{Vec}}
+
+
+A class can be used to represent either position or velocity.  
+
+
+
+
+{\ttfamily \#include $<$game\+Objects.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vec_aefd6dd5ca241f55cdc5548e4c02dc187}{Vec}} ()
+\item 
+\mbox{\hyperlink{class_vec_a80abcf142b2f81805d463274ff7f6b37}{Vec}} (float X, float Y)
+\item 
+\mbox{\hyperlink{class_vec}{Vec}} \mbox{\hyperlink{class_vec_a5d61a15c554890a69339c6fa3c6a89bd}{operator+}} (\mbox{\hyperlink{class_vec}{Vec}} const \&v)
+\item 
+\mbox{\hyperlink{class_vec}{Vec}} \& \mbox{\hyperlink{class_vec_a00b5ce595d201ec00edf6328e58977c1}{operator+=}} (\mbox{\hyperlink{class_vec}{Vec}} const \&v)
+\item 
+\mbox{\hyperlink{class_vec}{Vec}} \mbox{\hyperlink{class_vec_a85122410eb2e38c9b124c89a4c6c9d2c}{operator$\ast$}} (float scalar)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_vec_a7567d2fbcc5e49711a6beba57ed911e2}{x}}
+\item 
+float \mbox{\hyperlink{class_vec_a0b28956ff7d6fcc8a78c7b598f29931a}{y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class can be used to represent either position or velocity. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_vec_aefd6dd5ca241f55cdc5548e4c02dc187}\label{class_vec_aefd6dd5ca241f55cdc5548e4c02dc187}} 
+\index{Vec@{Vec}!Vec@{Vec}}
+\index{Vec@{Vec}!Vec@{Vec}}
+\doxysubsubsection{\texorpdfstring{Vec()}{Vec()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Vec\+::\+Vec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+default constructor, sets both x and y to 0.\+0f \mbox{\Hypertarget{class_vec_a80abcf142b2f81805d463274ff7f6b37}\label{class_vec_a80abcf142b2f81805d463274ff7f6b37}} 
+\index{Vec@{Vec}!Vec@{Vec}}
+\index{Vec@{Vec}!Vec@{Vec}}
+\doxysubsubsection{\texorpdfstring{Vec()}{Vec()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Vec\+::\+Vec (\begin{DoxyParamCaption}\item[{float}]{X,  }\item[{float}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+intializes x and y, there is no error checking statement in here, so make sure the value passed in are valid. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vec_a85122410eb2e38c9b124c89a4c6c9d2c}\label{class_vec_a85122410eb2e38c9b124c89a4c6c9d2c}} 
+\index{Vec@{Vec}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vec@{Vec}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec}{Vec}} Vec\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{float}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+multiplication overloading, making math operation more convenient. \mbox{\Hypertarget{class_vec_a5d61a15c554890a69339c6fa3c6a89bd}\label{class_vec_a5d61a15c554890a69339c6fa3c6a89bd}} 
+\index{Vec@{Vec}!operator+@{operator+}}
+\index{operator+@{operator+}!Vec@{Vec}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec}{Vec}} Vec\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec}{Vec}} const \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+plus operation overloading, supporting addition between 2 vectors \mbox{\Hypertarget{class_vec_a00b5ce595d201ec00edf6328e58977c1}\label{class_vec_a00b5ce595d201ec00edf6328e58977c1}} 
+\index{Vec@{Vec}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vec@{Vec}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec}{Vec}}\& Vec\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec}{Vec}} const \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+augmented plus overloading, supporting more convinient \mbox{\hyperlink{class_vec}{Vec}} math operation. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_vec_a7567d2fbcc5e49711a6beba57ed911e2}\label{class_vec_a7567d2fbcc5e49711a6beba57ed911e2}} 
+\index{Vec@{Vec}!x@{x}}
+\index{x@{x}!Vec@{Vec}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float Vec\+::x}
+
+coordinate x \mbox{\Hypertarget{class_vec_a0b28956ff7d6fcc8a78c7b598f29931a}\label{class_vec_a0b28956ff7d6fcc8a78c7b598f29931a}} 
+\index{Vec@{Vec}!y@{y}}
+\index{y@{y}!Vec@{Vec}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Vec\+::y}
+
+coordinate y 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game\+Objects.\+hpp\end{DoxyCompactItemize}

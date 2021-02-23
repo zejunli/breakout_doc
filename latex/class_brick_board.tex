@@ -1,0 +1,87 @@
+\hypertarget{class_brick_board}{}\doxysection{Brick\+Board Class Reference}
+\label{class_brick_board}\index{BrickBoard@{BrickBoard}}
+
+
+This class represents a board of bricks.  
+
+
+
+
+{\ttfamily \#include $<$game\+Objects.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_brick_board_a51338202b156746437eb1025d5885857}{Brick\+Board}} ()
+\item 
+void \mbox{\hyperlink{class_brick_board_a286191960dcc3afa94d131e8b9e525fd}{populate\+Board}} ()
+\item 
+void \mbox{\hyperlink{class_brick_board_a63cd8631df047fffd8e5fc6be7b8406e}{update}} (float delta\+Tiem)
+\item 
+void \mbox{\hyperlink{class_brick_board_ae29ccbfaddd7dbdb4c02e38bd5980389}{draw}} (SDL\+\_\+\+Renderer $\ast$r)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_brick_board_a1ac83b2c3bb54e34158e4a4baee1073e}{num\+Bricks}}
+\item 
+\mbox{\hyperlink{class_brick}{Brick}} \mbox{\hyperlink{class_brick_board_ad601c2d214734fbb5f19743fc35afc4a}{board}} \mbox{[}BOARD\+\_\+\+ROWS\mbox{]}\mbox{[}BOARD\+\_\+\+COLS\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a board of bricks. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_brick_board_a51338202b156746437eb1025d5885857}\label{class_brick_board_a51338202b156746437eb1025d5885857}} 
+\index{BrickBoard@{BrickBoard}!BrickBoard@{BrickBoard}}
+\index{BrickBoard@{BrickBoard}!BrickBoard@{BrickBoard}}
+\doxysubsubsection{\texorpdfstring{BrickBoard()}{BrickBoard()}}
+{\footnotesize\ttfamily Brick\+Board\+::\+Brick\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this is empty, used only for preventing compiler crying about initialization error. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_brick_board_ae29ccbfaddd7dbdb4c02e38bd5980389}\label{class_brick_board_ae29ccbfaddd7dbdb4c02e38bd5980389}} 
+\index{BrickBoard@{BrickBoard}!draw@{draw}}
+\index{draw@{draw}!BrickBoard@{BrickBoard}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Brick\+Board\+::draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{r }\end{DoxyParamCaption})}
+
+render this board 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em r} & a pointer to the renderer object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_brick_board_a286191960dcc3afa94d131e8b9e525fd}\label{class_brick_board_a286191960dcc3afa94d131e8b9e525fd}} 
+\index{BrickBoard@{BrickBoard}!populateBoard@{populateBoard}}
+\index{populateBoard@{populateBoard}!BrickBoard@{BrickBoard}}
+\doxysubsubsection{\texorpdfstring{populateBoard()}{populateBoard()}}
+{\footnotesize\ttfamily void Brick\+Board\+::populate\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+populate the board with intiailized bricks. \mbox{\Hypertarget{class_brick_board_a63cd8631df047fffd8e5fc6be7b8406e}\label{class_brick_board_a63cd8631df047fffd8e5fc6be7b8406e}} 
+\index{BrickBoard@{BrickBoard}!update@{update}}
+\index{update@{update}!BrickBoard@{BrickBoard}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Brick\+Board\+::update (\begin{DoxyParamCaption}\item[{float}]{delta\+Tiem }\end{DoxyParamCaption})}
+
+update the board, this method is currently not in use 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_brick_board_ad601c2d214734fbb5f19743fc35afc4a}\label{class_brick_board_ad601c2d214734fbb5f19743fc35afc4a}} 
+\index{BrickBoard@{BrickBoard}!board@{board}}
+\index{board@{board}!BrickBoard@{BrickBoard}}
+\doxysubsubsection{\texorpdfstring{board}{board}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_brick}{Brick}} Brick\+Board\+::board\mbox{[}BOARD\+\_\+\+ROWS\mbox{]}\mbox{[}BOARD\+\_\+\+COLS\mbox{]}}
+
+the board itself \mbox{\Hypertarget{class_brick_board_a1ac83b2c3bb54e34158e4a4baee1073e}\label{class_brick_board_a1ac83b2c3bb54e34158e4a4baee1073e}} 
+\index{BrickBoard@{BrickBoard}!numBricks@{numBricks}}
+\index{numBricks@{numBricks}!BrickBoard@{BrickBoard}}
+\doxysubsubsection{\texorpdfstring{numBricks}{numBricks}}
+{\footnotesize\ttfamily int Brick\+Board\+::num\+Bricks}
+
+number of bricks the board currently has 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game\+Objects.\+hpp\end{DoxyCompactItemize}

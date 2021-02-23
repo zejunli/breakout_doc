@@ -1,0 +1,100 @@
+\hypertarget{class_paddle}{}\doxysection{Paddle Class Reference}
+\label{class_paddle}\index{Paddle@{Paddle}}
+
+
+This class represents the paddle in the game.  
+
+
+
+
+{\ttfamily \#include $<$game\+Objects.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paddle_a53895671ddfde9ba668546065ec4f164}{Paddle}} ()
+\item 
+\mbox{\hyperlink{class_paddle_a29a6a3befce851077b2895d371981619}{Paddle}} (\mbox{\hyperlink{class_vec}{Vec}} pos, \mbox{\hyperlink{class_vec}{Vec}} v)
+\item 
+void \mbox{\hyperlink{class_paddle_a5d79e094998661a20647b4625c1e928b}{update}} (float delta\+Time)
+\item 
+void \mbox{\hyperlink{class_paddle_a54bc7bb9ccfa77340daade812f6fa90a}{draw}} (SDL\+\_\+\+Renderer $\ast$r)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vec}{Vec}} \mbox{\hyperlink{class_paddle_a19702bfa6b13ffee5a47395696e8a3e4}{position}}
+\item 
+\mbox{\hyperlink{class_vec}{Vec}} \mbox{\hyperlink{class_paddle_ad025f3303c8409976a782ffedddf0d6a}{velocity}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_paddle_a3ba553ef3fbf45b23f2e2d866838e36b}{rect}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the paddle in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_paddle_a53895671ddfde9ba668546065ec4f164}\label{class_paddle_a53895671ddfde9ba668546065ec4f164}} 
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{Paddle()}{Paddle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Paddle\+::\+Paddle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+default constructor, only used for preventing the compiler complaining about initialization. \mbox{\Hypertarget{class_paddle_a29a6a3befce851077b2895d371981619}\label{class_paddle_a29a6a3befce851077b2895d371981619}} 
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{Paddle()}{Paddle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Paddle\+::\+Paddle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec}{Vec}}}]{pos,  }\item[{\mbox{\hyperlink{class_vec}{Vec}}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+specify the position, velocity of the paddle at the intial state, also prepare the rect for later rendering 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paddle_a54bc7bb9ccfa77340daade812f6fa90a}\label{class_paddle_a54bc7bb9ccfa77340daade812f6fa90a}} 
+\index{Paddle@{Paddle}!draw@{draw}}
+\index{draw@{draw}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Paddle\+::draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{r }\end{DoxyParamCaption})}
+
+render the paddle on the game window 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em r} & this is the renderer that will do the rendering job. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_paddle_a5d79e094998661a20647b4625c1e928b}\label{class_paddle_a5d79e094998661a20647b4625c1e928b}} 
+\index{Paddle@{Paddle}!update@{update}}
+\index{update@{update}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Paddle\+::update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+update the position of paddle according to the time step passed in 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em time} & step used for updating paddle position, in milliseconds \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_paddle_a19702bfa6b13ffee5a47395696e8a3e4}\label{class_paddle_a19702bfa6b13ffee5a47395696e8a3e4}} 
+\index{Paddle@{Paddle}!position@{position}}
+\index{position@{position}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec}{Vec}} Paddle\+::position}
+
+the current position of paddle \mbox{\Hypertarget{class_paddle_a3ba553ef3fbf45b23f2e2d866838e36b}\label{class_paddle_a3ba553ef3fbf45b23f2e2d866838e36b}} 
+\index{Paddle@{Paddle}!rect@{rect}}
+\index{rect@{rect}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Paddle\+::rect \{\}}
+
+this rect describes where the paddle is as well as the size of the paddle \mbox{\Hypertarget{class_paddle_ad025f3303c8409976a782ffedddf0d6a}\label{class_paddle_ad025f3303c8409976a782ffedddf0d6a}} 
+\index{Paddle@{Paddle}!velocity@{velocity}}
+\index{velocity@{velocity}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec}{Vec}} Paddle\+::velocity}
+
+the current velocity of paddle 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game\+Objects.\+hpp\end{DoxyCompactItemize}

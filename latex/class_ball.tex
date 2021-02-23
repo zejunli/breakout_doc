@@ -1,0 +1,134 @@
+\hypertarget{class_ball}{}\doxysection{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+
+
+This class represents the ball in the game.  
+
+
+
+
+{\ttfamily \#include $<$game\+Objects.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ball_a86a144d3dad6c953e422e32435923bbb}{Ball}} ()
+\item 
+\mbox{\hyperlink{class_ball_ae042cfcdf94864c4d06d3c8650de7dfe}{Ball}} (\mbox{\hyperlink{class_vec}{Vec}} pos, \mbox{\hyperlink{class_vec}{Vec}} v)
+\item 
+void \mbox{\hyperlink{class_ball_aa08615bc50e0f29a45a033fc54755562}{handle\+Collision\+With\+Paddle}} (\mbox{\hyperlink{struct_contact}{Contact}} const \&contact)
+\item 
+void \mbox{\hyperlink{class_ball_a00a8634dfd0bd8b870f647fd2d47188c}{handle\+Collision\+With\+Wall}} (\mbox{\hyperlink{struct_contact}{Contact}} const \&contact)
+\item 
+void \mbox{\hyperlink{class_ball_a15d9395b828bcc1ad5c751ae820117d8}{handle\+Collision\+With\+Brick}} (\mbox{\hyperlink{struct_contact}{Contact}} const \&contact)
+\item 
+void \mbox{\hyperlink{class_ball_ade1a50df4733f5a53e7eff51ab6769ed}{update}} (float delta\+Time)
+\item 
+void \mbox{\hyperlink{class_ball_aad4cff47e075fc5049b65bdb61a6f072}{draw}} (SDL\+\_\+\+Renderer $\ast$r)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vec}{Vec}} \mbox{\hyperlink{class_ball_a0c8138e4815e3ba921a146cdf9f1bea0}{position}}
+\item 
+\mbox{\hyperlink{class_vec}{Vec}} \mbox{\hyperlink{class_ball_a5b01ccd53b285d339e5ed6a666cc6a8a}{velocity}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_ball_ad4f294b00d5bab91244f192e01b3082f}{rect}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the ball in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ball_a86a144d3dad6c953e422e32435923bbb}\label{class_ball_a86a144d3dad6c953e422e32435923bbb}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor in the game, it does nothing, only usage is to prevent the compiler crying about initialization error. \mbox{\Hypertarget{class_ball_ae042cfcdf94864c4d06d3c8650de7dfe}\label{class_ball_ae042cfcdf94864c4d06d3c8650de7dfe}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec}{Vec}}}]{pos,  }\item[{\mbox{\hyperlink{class_vec}{Vec}}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initializes the ball\textquotesingle{}s velocity, postition as well as preparing the rect for later rendering. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ball_aad4cff47e075fc5049b65bdb61a6f072}\label{class_ball_aad4cff47e075fc5049b65bdb61a6f072}} 
+\index{Ball@{Ball}!draw@{draw}}
+\index{draw@{draw}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Ball\+::draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{r }\end{DoxyParamCaption})}
+
+this method simply takes a renderer and draw the ball on the game window \mbox{\Hypertarget{class_ball_a15d9395b828bcc1ad5c751ae820117d8}\label{class_ball_a15d9395b828bcc1ad5c751ae820117d8}} 
+\index{Ball@{Ball}!handleCollisionWithBrick@{handleCollisionWithBrick}}
+\index{handleCollisionWithBrick@{handleCollisionWithBrick}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{handleCollisionWithBrick()}{handleCollisionWithBrick()}}
+{\footnotesize\ttfamily void Ball\+::handle\+Collision\+With\+Brick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contact}{Contact}} const \&}]{contact }\end{DoxyParamCaption})}
+
+handles the situation where ball collides with brick 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em contact} & this carries information of contact type and the penetration of the ball \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ball_aa08615bc50e0f29a45a033fc54755562}\label{class_ball_aa08615bc50e0f29a45a033fc54755562}} 
+\index{Ball@{Ball}!handleCollisionWithPaddle@{handleCollisionWithPaddle}}
+\index{handleCollisionWithPaddle@{handleCollisionWithPaddle}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{handleCollisionWithPaddle()}{handleCollisionWithPaddle()}}
+{\footnotesize\ttfamily void Ball\+::handle\+Collision\+With\+Paddle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contact}{Contact}} const \&}]{contact }\end{DoxyParamCaption})}
+
+handles the situation where ball collides with paddle 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em contact} & this carries information of contact type and the penetration of the ball \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ball_a00a8634dfd0bd8b870f647fd2d47188c}\label{class_ball_a00a8634dfd0bd8b870f647fd2d47188c}} 
+\index{Ball@{Ball}!handleCollisionWithWall@{handleCollisionWithWall}}
+\index{handleCollisionWithWall@{handleCollisionWithWall}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{handleCollisionWithWall()}{handleCollisionWithWall()}}
+{\footnotesize\ttfamily void Ball\+::handle\+Collision\+With\+Wall (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contact}{Contact}} const \&}]{contact }\end{DoxyParamCaption})}
+
+handles the situation where ball collides with wall 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em contact} & this carries information of contact type and the penetration of the ball \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ball_ade1a50df4733f5a53e7eff51ab6769ed}\label{class_ball_ade1a50df4733f5a53e7eff51ab6769ed}} 
+\index{Ball@{Ball}!update@{update}}
+\index{update@{update}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Ball\+::update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+update ball\textquotesingle{}s position based on the time step passed in 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em delta\+Time} & this is the time step we use to update the position of ball, in milliseconds \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ball_a0c8138e4815e3ba921a146cdf9f1bea0}\label{class_ball_a0c8138e4815e3ba921a146cdf9f1bea0}} 
+\index{Ball@{Ball}!position@{position}}
+\index{position@{position}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec}{Vec}} Ball\+::position}
+
+the current position on the game window the ball is at \mbox{\Hypertarget{class_ball_ad4f294b00d5bab91244f192e01b3082f}\label{class_ball_ad4f294b00d5bab91244f192e01b3082f}} 
+\index{Ball@{Ball}!rect@{rect}}
+\index{rect@{rect}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Ball\+::rect \{\}}
+
+ball is a rectangle, this describes the position as well as the size of the ball \mbox{\Hypertarget{class_ball_a5b01ccd53b285d339e5ed6a666cc6a8a}\label{class_ball_a5b01ccd53b285d339e5ed6a666cc6a8a}} 
+\index{Ball@{Ball}!velocity@{velocity}}
+\index{velocity@{velocity}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec}{Vec}} Ball\+::velocity}
+
+the current velocity the ball has 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game\+Objects.\+hpp\end{DoxyCompactItemize}

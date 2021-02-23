@@ -1,0 +1,98 @@
+\hypertarget{class_brick}{}\doxysection{Brick Class Reference}
+\label{class_brick}\index{Brick@{Brick}}
+
+
+This class represents a single brick in the game.  
+
+
+
+
+{\ttfamily \#include $<$game\+Objects.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_brick_aa29d678c3d901c7b18cbc3a27a51be17}{Brick}} ()
+\item 
+\mbox{\hyperlink{class_brick_a67d8c8b248fc101690f5b66b6265df69}{Brick}} (Uint8 score, \mbox{\hyperlink{class_vec}{Vec}} pos)
+\item 
+void \mbox{\hyperlink{class_brick_a6f22f328b8e8c4223433a03584d95bfa}{update}} (float dealta\+Time)
+\item 
+void \mbox{\hyperlink{class_brick_a14d7476f435bd6392e7c210fec1fe6d2}{draw}} (SDL\+\_\+\+Renderer $\ast$r)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Uint8 \mbox{\hyperlink{class_brick_a23bbb1506cbbcd8acd1ae7b4ad5a2c6d}{brick\+Score}}
+\item 
+\mbox{\hyperlink{struct_color}{Color\+\_\+t}} \mbox{\hyperlink{class_brick_a803a832ade5fd7912fea8f179138769a}{color}}
+\item 
+bool \mbox{\hyperlink{class_brick_aa31ec16048a3fea4d1d45f0602f976cd}{is\+Alive}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_brick_ab4c6e2bfb3b0c09cc8fefa8372632c4c}{rect}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a single brick in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_brick_aa29d678c3d901c7b18cbc3a27a51be17}\label{class_brick_aa29d678c3d901c7b18cbc3a27a51be17}} 
+\index{Brick@{Brick}!Brick@{Brick}}
+\index{Brick@{Brick}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{Brick()}{Brick()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Brick\+::\+Brick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+empty constructor only to prevent compiler complaints. \mbox{\Hypertarget{class_brick_a67d8c8b248fc101690f5b66b6265df69}\label{class_brick_a67d8c8b248fc101690f5b66b6265df69}} 
+\index{Brick@{Brick}!Brick@{Brick}}
+\index{Brick@{Brick}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{Brick()}{Brick()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Brick\+::\+Brick (\begin{DoxyParamCaption}\item[{Uint8}]{score,  }\item[{\mbox{\hyperlink{class_vec}{Vec}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+initializes this brick, setting up its position and size, how gives it a score 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_brick_a14d7476f435bd6392e7c210fec1fe6d2}\label{class_brick_a14d7476f435bd6392e7c210fec1fe6d2}} 
+\index{Brick@{Brick}!draw@{draw}}
+\index{draw@{draw}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Brick\+::draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{r }\end{DoxyParamCaption})}
+
+draw this brick param\mbox{[}in\mbox{]} r renderer pointer \mbox{\Hypertarget{class_brick_a6f22f328b8e8c4223433a03584d95bfa}\label{class_brick_a6f22f328b8e8c4223433a03584d95bfa}} 
+\index{Brick@{Brick}!update@{update}}
+\index{update@{update}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Brick\+::update (\begin{DoxyParamCaption}\item[{float}]{dealta\+Time }\end{DoxyParamCaption})}
+
+update this brick, this method is currently not in use! 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_brick_a23bbb1506cbbcd8acd1ae7b4ad5a2c6d}\label{class_brick_a23bbb1506cbbcd8acd1ae7b4ad5a2c6d}} 
+\index{Brick@{Brick}!brickScore@{brickScore}}
+\index{brickScore@{brickScore}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{brickScore}{brickScore}}
+{\footnotesize\ttfamily Uint8 Brick\+::brick\+Score}
+
+representing how many score this brick values \mbox{\Hypertarget{class_brick_a803a832ade5fd7912fea8f179138769a}\label{class_brick_a803a832ade5fd7912fea8f179138769a}} 
+\index{Brick@{Brick}!color@{color}}
+\index{color@{color}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_color}{Color\+\_\+t}} Brick\+::color}
+
+the color of this brick \mbox{\Hypertarget{class_brick_aa31ec16048a3fea4d1d45f0602f976cd}\label{class_brick_aa31ec16048a3fea4d1d45f0602f976cd}} 
+\index{Brick@{Brick}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{isAlive}{isAlive}}
+{\footnotesize\ttfamily bool Brick\+::is\+Alive}
+
+determines whether this brick should be drawn \mbox{\Hypertarget{class_brick_ab4c6e2bfb3b0c09cc8fefa8372632c4c}\label{class_brick_ab4c6e2bfb3b0c09cc8fefa8372632c4c}} 
+\index{Brick@{Brick}!rect@{rect}}
+\index{rect@{rect}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Brick\+::rect \{\}}
+
+represents the brick position and size 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game\+Objects.\+hpp\end{DoxyCompactItemize}
