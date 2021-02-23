@@ -79,8 +79,8 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a51338202b156746437eb1025d5885857"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick_board.html#a51338202b156746437eb1025d5885857">BrickBoard</a> ()</td></tr>
 <tr class="separator:a51338202b156746437eb1025d5885857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a286191960dcc3afa94d131e8b9e525fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick_board.html#a286191960dcc3afa94d131e8b9e525fd">populateBoard</a> ()</td></tr>
-<tr class="separator:a286191960dcc3afa94d131e8b9e525fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa2959d1c09a3fdd50431a15cf2d34c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick_board.html#abfa2959d1c09a3fdd50431a15cf2d34c">populateBoard</a> (std::string const &amp;filePath)</td></tr>
+<tr class="separator:abfa2959d1c09a3fdd50431a15cf2d34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63cd8631df047fffd8e5fc6be7b8406e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick_board.html#a63cd8631df047fffd8e5fc6be7b8406e">update</a> (float deltaTiem)</td></tr>
 <tr class="separator:a63cd8631df047fffd8e5fc6be7b8406e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae29ccbfaddd7dbdb4c02e38bd5980389"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick_board.html#ae29ccbfaddd7dbdb4c02e38bd5980389">draw</a> (SDL_Renderer *r)</td></tr>
@@ -90,8 +90,8 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1ac83b2c3bb54e34158e4a4baee1073e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick_board.html#a1ac83b2c3bb54e34158e4a4baee1073e">numBricks</a></td></tr>
 <tr class="separator:a1ac83b2c3bb54e34158e4a4baee1073e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad601c2d214734fbb5f19743fc35afc4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_brick.html">Brick</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick_board.html#ad601c2d214734fbb5f19743fc35afc4a">board</a> [BOARD_ROWS][BOARD_COLS]</td></tr>
-<tr class="separator:ad601c2d214734fbb5f19743fc35afc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28aff289173d4166c3181bd9c52addd3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="class_brick.html">Brick</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick_board.html#a28aff289173d4166c3181bd9c52addd3">board</a></td></tr>
+<tr class="separator:a28aff289173d4166c3181bd9c52addd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents a board of bricks. </p>
@@ -139,8 +139,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a286191960dcc3afa94d131e8b9e525fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a286191960dcc3afa94d131e8b9e525fd">&#9670;&nbsp;</a></span>populateBoard()</h2>
+<a id="abfa2959d1c09a3fdd50431a15cf2d34c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa2959d1c09a3fdd50431a15cf2d34c">&#9670;&nbsp;</a></span>populateBoard()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,7 +148,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void BrickBoard::populateBoard </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -177,14 +178,14 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad601c2d214734fbb5f19743fc35afc4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad601c2d214734fbb5f19743fc35afc4a">&#9670;&nbsp;</a></span>board</h2>
+<a id="a28aff289173d4166c3181bd9c52addd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28aff289173d4166c3181bd9c52addd3">&#9670;&nbsp;</a></span>board</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_brick.html">Brick</a> BrickBoard::board[BOARD_ROWS][BOARD_COLS]</td>
+          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="class_brick.html">Brick</a>&gt; &gt; BrickBoard::board</td>
         </tr>
       </table>
 </div><div class="memdoc">

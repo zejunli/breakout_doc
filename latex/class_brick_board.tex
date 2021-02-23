@@ -14,7 +14,7 @@ This class represents a board of bricks.
 \item 
 \mbox{\hyperlink{class_brick_board_a51338202b156746437eb1025d5885857}{Brick\+Board}} ()
 \item 
-void \mbox{\hyperlink{class_brick_board_a286191960dcc3afa94d131e8b9e525fd}{populate\+Board}} ()
+void \mbox{\hyperlink{class_brick_board_abfa2959d1c09a3fdd50431a15cf2d34c}{populate\+Board}} (std\+::string const \&file\+Path)
 \item 
 void \mbox{\hyperlink{class_brick_board_a63cd8631df047fffd8e5fc6be7b8406e}{update}} (float delta\+Tiem)
 \item 
@@ -25,7 +25,7 @@ void \mbox{\hyperlink{class_brick_board_ae29ccbfaddd7dbdb4c02e38bd5980389}{draw}
 \item 
 int \mbox{\hyperlink{class_brick_board_a1ac83b2c3bb54e34158e4a4baee1073e}{num\+Bricks}}
 \item 
-\mbox{\hyperlink{class_brick}{Brick}} \mbox{\hyperlink{class_brick_board_ad601c2d214734fbb5f19743fc35afc4a}{board}} \mbox{[}BOARD\+\_\+\+ROWS\mbox{]}\mbox{[}BOARD\+\_\+\+COLS\mbox{]}
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{class_brick}{Brick}} $>$ $>$ \mbox{\hyperlink{class_brick_board_a28aff289173d4166c3181bd9c52addd3}{board}}
 \end{DoxyCompactItemize}
 
 
@@ -53,11 +53,11 @@ render this board
 \mbox{\texttt{ in}}  & {\em r} & a pointer to the renderer object \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_brick_board_a286191960dcc3afa94d131e8b9e525fd}\label{class_brick_board_a286191960dcc3afa94d131e8b9e525fd}} 
+\mbox{\Hypertarget{class_brick_board_abfa2959d1c09a3fdd50431a15cf2d34c}\label{class_brick_board_abfa2959d1c09a3fdd50431a15cf2d34c}} 
 \index{BrickBoard@{BrickBoard}!populateBoard@{populateBoard}}
 \index{populateBoard@{populateBoard}!BrickBoard@{BrickBoard}}
 \doxysubsubsection{\texorpdfstring{populateBoard()}{populateBoard()}}
-{\footnotesize\ttfamily void Brick\+Board\+::populate\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Brick\+Board\+::populate\+Board (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{file\+Path }\end{DoxyParamCaption})}
 
 populate the board with intiailized bricks. \mbox{\Hypertarget{class_brick_board_a63cd8631df047fffd8e5fc6be7b8406e}\label{class_brick_board_a63cd8631df047fffd8e5fc6be7b8406e}} 
 \index{BrickBoard@{BrickBoard}!update@{update}}
@@ -68,11 +68,11 @@ populate the board with intiailized bricks. \mbox{\Hypertarget{class_brick_board
 update the board, this method is currently not in use 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_brick_board_ad601c2d214734fbb5f19743fc35afc4a}\label{class_brick_board_ad601c2d214734fbb5f19743fc35afc4a}} 
+\mbox{\Hypertarget{class_brick_board_a28aff289173d4166c3181bd9c52addd3}\label{class_brick_board_a28aff289173d4166c3181bd9c52addd3}} 
 \index{BrickBoard@{BrickBoard}!board@{board}}
 \index{board@{board}!BrickBoard@{BrickBoard}}
 \doxysubsubsection{\texorpdfstring{board}{board}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_brick}{Brick}} Brick\+Board\+::board\mbox{[}BOARD\+\_\+\+ROWS\mbox{]}\mbox{[}BOARD\+\_\+\+COLS\mbox{]}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$\mbox{\hyperlink{class_brick}{Brick}}$>$ $>$ Brick\+Board\+::board}
 
 the board itself \mbox{\Hypertarget{class_brick_board_a1ac83b2c3bb54e34158e4a4baee1073e}\label{class_brick_board_a1ac83b2c3bb54e34158e4a4baee1073e}} 
 \index{BrickBoard@{BrickBoard}!numBricks@{numBricks}}
