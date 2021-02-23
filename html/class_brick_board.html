@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Breakout: BrickBoard Class Reference</title>
+<title>My Project: BrickBoard Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Breakout
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -83,8 +83,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abfa2959d1c09a3fdd50431a15cf2d34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63cd8631df047fffd8e5fc6be7b8406e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick_board.html#a63cd8631df047fffd8e5fc6be7b8406e">update</a> (float deltaTiem)</td></tr>
 <tr class="separator:a63cd8631df047fffd8e5fc6be7b8406e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae29ccbfaddd7dbdb4c02e38bd5980389"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick_board.html#ae29ccbfaddd7dbdb4c02e38bd5980389">draw</a> (SDL_Renderer *r)</td></tr>
-<tr class="separator:ae29ccbfaddd7dbdb4c02e38bd5980389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d407b2acb93b1452097847eb94df12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_brick_board.html#a28d407b2acb93b1452097847eb94df12">draw</a> (SDL_Renderer *r, int rows, int cols)</td></tr>
+<tr class="separator:a28d407b2acb93b1452097847eb94df12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -115,8 +115,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae29ccbfaddd7dbdb4c02e38bd5980389"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae29ccbfaddd7dbdb4c02e38bd5980389">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a28d407b2acb93b1452097847eb94df12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d407b2acb93b1452097847eb94df12">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,14 +125,32 @@ Public Attributes</h2></td></tr>
           <td class="memname">void BrickBoard::draw </td>
           <td>(</td>
           <td class="paramtype">SDL_Renderer *&#160;</td>
-          <td class="paramname"><em>r</em></td><td>)</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cols</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>render this board </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>a pointer to the renderer object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rows</td><td>designated number of rows to render </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cols</td><td>designated number of cols to render </td></tr>
   </table>
   </dd>
 </dl>

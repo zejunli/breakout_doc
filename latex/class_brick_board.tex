@@ -18,7 +18,7 @@ void \mbox{\hyperlink{class_brick_board_abfa2959d1c09a3fdd50431a15cf2d34c}{popul
 \item 
 void \mbox{\hyperlink{class_brick_board_a63cd8631df047fffd8e5fc6be7b8406e}{update}} (float delta\+Tiem)
 \item 
-void \mbox{\hyperlink{class_brick_board_ae29ccbfaddd7dbdb4c02e38bd5980389}{draw}} (SDL\+\_\+\+Renderer $\ast$r)
+void \mbox{\hyperlink{class_brick_board_a28d407b2acb93b1452097847eb94df12}{draw}} (SDL\+\_\+\+Renderer $\ast$r, int rows, int cols)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -42,15 +42,19 @@ This class represents a board of bricks.
 this is empty, used only for preventing compiler crying about initialization error. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_brick_board_ae29ccbfaddd7dbdb4c02e38bd5980389}\label{class_brick_board_ae29ccbfaddd7dbdb4c02e38bd5980389}} 
+\mbox{\Hypertarget{class_brick_board_a28d407b2acb93b1452097847eb94df12}\label{class_brick_board_a28d407b2acb93b1452097847eb94df12}} 
 \index{BrickBoard@{BrickBoard}!draw@{draw}}
 \index{draw@{draw}!BrickBoard@{BrickBoard}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily void Brick\+Board\+::draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{r }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Brick\+Board\+::draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{r,  }\item[{int}]{rows,  }\item[{int}]{cols }\end{DoxyParamCaption})}
 
 render this board 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{ in}}  & {\em r} & a pointer to the renderer object \\
+\hline
+\mbox{\texttt{ in}}  & {\em rows} & designated number of rows to render \\
+\hline
+\mbox{\texttt{ in}}  & {\em cols} & designated number of cols to render \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_brick_board_abfa2959d1c09a3fdd50431a15cf2d34c}\label{class_brick_board_abfa2959d1c09a3fdd50431a15cf2d34c}} 

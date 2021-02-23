@@ -41,6 +41,8 @@ void \mbox{\hyperlink{class_s_d_l_breakout_a4d1c9a0e19c60c20aba5137e55cf94e0}{re
 void \mbox{\hyperlink{class_s_d_l_breakout_ab2f5db1d7d6955e2caa16b5e91a9c74a}{start\+Game}} ()
 \item 
 void \mbox{\hyperlink{class_s_d_l_breakout_a1a2ab150e4a6a7cbc671421b039ffd3d}{set\+Lang}} (Resource\+Type type)
+\item 
+void \mbox{\hyperlink{class_s_d_l_breakout_af812a543c7ca7582b4fdccb25bb53c9b}{count\+Down}} (int seconds)
 \end{DoxyCompactItemize}
 
 
@@ -70,6 +72,17 @@ Constructor, it initializes all the game resources we need, preparing for the ma
 releases/frees all the resources loaded in the constructor 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_d_l_breakout_af812a543c7ca7582b4fdccb25bb53c9b}\label{class_s_d_l_breakout_af812a543c7ca7582b4fdccb25bb53c9b}} 
+\index{SDLBreakout@{SDLBreakout}!countDown@{countDown}}
+\index{countDown@{countDown}!SDLBreakout@{SDLBreakout}}
+\doxysubsubsection{\texorpdfstring{countDown()}{countDown()}}
+{\footnotesize\ttfamily void SDLBreakout\+::count\+Down (\begin{DoxyParamCaption}\item[{int}]{seconds }\end{DoxyParamCaption})}
+
+do a count down, this will be the transition to the next level 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em seconds} & seconds to wait before next level is entered \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_s_d_l_breakout_a1d3f12dbf3f670b77d0e14172d84e94f}\label{class_s_d_l_breakout_a1d3f12dbf3f670b77d0e14172d84e94f}} 
 \index{SDLBreakout@{SDLBreakout}!gameOverWindow@{gameOverWindow}}
 \index{gameOverWindow@{gameOverWindow}!SDLBreakout@{SDLBreakout}}

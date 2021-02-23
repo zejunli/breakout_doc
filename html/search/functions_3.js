@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['gameoverwindow_90',['gameOverWindow',['../class_s_d_l_breakout.html#a1d3f12dbf3f670b77d0e14172d84e94f',1,'SDLBreakout']]],
-  ['getinstance_91',['getInstance',['../class_resource_manager.html#a8fd3155e6658c0bdc3b3f6f81443e374',1,'ResourceManager']]],
-  ['getresourcebackgroundmusic_92',['getResourceBackgroundMusic',['../class_resource_manager.html#ad8745ce919a160d71039baa145d5838e',1,'ResourceManager']]],
-  ['getresourcefont_93',['getResourceFont',['../class_resource_manager.html#a737c4f97a68aab905abba50f4b37f808',1,'ResourceManager']]],
-  ['getresourcesoundeffect_94',['getResourceSoundEffect',['../class_resource_manager.html#a8e15dbba4e880d9739b5e2525f746b35',1,'ResourceManager']]],
-  ['getsdlrenderer_95',['getSDLRenderer',['../class_s_d_l_breakout.html#a952cacaf8b4c0040b9f243c4c4a6fe92',1,'SDLBreakout']]],
-  ['getsdlwindow_96',['getSDLWindow',['../class_s_d_l_breakout.html#a244cf3dadbc103c264b17d214111d937',1,'SDLBreakout']]]
+  ['draw_89',['draw',['../class_ball.html#aad4cff47e075fc5049b65bdb61a6f072',1,'Ball::draw()'],['../class_paddle.html#a54bc7bb9ccfa77340daade812f6fa90a',1,'Paddle::draw()'],['../class_brick.html#a14d7476f435bd6392e7c210fec1fe6d2',1,'Brick::draw()'],['../class_brick_board.html#a28d407b2acb93b1452097847eb94df12',1,'BrickBoard::draw()']]],
+  ['drawlives_90',['drawLives',['../class_player_attribute.html#a26bf0b45fa15be19a3f065dce3061b3f',1,'PlayerAttribute']]],
+  ['drawscore_91',['drawScore',['../class_player_attribute.html#ae3b2dae340aba61bf19dfc17ebd64c68',1,'PlayerAttribute']]]
 ];

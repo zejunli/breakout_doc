@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Breakout: gameObjects.hpp Source File</title>
+<title>My Project: gameObjects.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Breakout
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> RANK_SCORE[4] = {7, 5, 3, 1};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> PADDLE_SPEED = .9f;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> BALL_SPEED = .4f;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> BALL_SPEED = .55f;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> MS_PER_FRAME = 15.0f;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
@@ -325,13 +325,11 @@ $(function() {
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
 <div class="line"><a name="l00418"></a><span class="lineno"><a class="line" href="class_brick_board.html#a63cd8631df047fffd8e5fc6be7b8406e">  418</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brick_board.html#a63cd8631df047fffd8e5fc6be7b8406e">update</a>(<span class="keywordtype">float</span> deltaTiem);</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00424"></a><span class="lineno"><a class="line" href="class_brick_board.html#ae29ccbfaddd7dbdb4c02e38bd5980389">  424</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brick_board.html#ae29ccbfaddd7dbdb4c02e38bd5980389">draw</a>(SDL_Renderer *r);</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;};</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno"><a class="line" href="class_brick_board.html#a28d407b2acb93b1452097847eb94df12">  426</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brick_board.html#a28d407b2acb93b1452097847eb94df12">draw</a>(SDL_Renderer *r, <span class="keywordtype">int</span> rows, <span class="keywordtype">int</span> cols);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;};</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
@@ -342,6 +340,8 @@ $(function() {
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
 <div class="ttc" id="aclass_ball_html"><div class="ttname"><a href="class_ball.html">Ball</a></div><div class="ttdoc">This class represents the ball in the game.</div><div class="ttdef"><b>Definition:</b> gameObjects.hpp:158</div></div>
 <div class="ttc" id="aclass_ball_html_a00a8634dfd0bd8b870f647fd2d47188c"><div class="ttname"><a href="class_ball.html#a00a8634dfd0bd8b870f647fd2d47188c">Ball::handleCollisionWithWall</a></div><div class="ttdeci">void handleCollisionWithWall(Contact const &amp;contact)</div></div>
 <div class="ttc" id="aclass_ball_html_a0c8138e4815e3ba921a146cdf9f1bea0"><div class="ttname"><a href="class_ball.html#a0c8138e4815e3ba921a146cdf9f1bea0">Ball::position</a></div><div class="ttdeci">Vec position</div><div class="ttdef"><b>Definition:</b> gameObjects.hpp:161</div></div>
@@ -356,10 +356,10 @@ $(function() {
 <div class="ttc" id="aclass_brick_board_html"><div class="ttname"><a href="class_brick_board.html">BrickBoard</a></div><div class="ttdoc">This class represents a board of bricks.</div><div class="ttdef"><b>Definition:</b> gameObjects.hpp:397</div></div>
 <div class="ttc" id="aclass_brick_board_html_a1ac83b2c3bb54e34158e4a4baee1073e"><div class="ttname"><a href="class_brick_board.html#a1ac83b2c3bb54e34158e4a4baee1073e">BrickBoard::numBricks</a></div><div class="ttdeci">int numBricks</div><div class="ttdef"><b>Definition:</b> gameObjects.hpp:400</div></div>
 <div class="ttc" id="aclass_brick_board_html_a28aff289173d4166c3181bd9c52addd3"><div class="ttname"><a href="class_brick_board.html#a28aff289173d4166c3181bd9c52addd3">BrickBoard::board</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; Brick &gt; &gt; board</div><div class="ttdef"><b>Definition:</b> gameObjects.hpp:403</div></div>
+<div class="ttc" id="aclass_brick_board_html_a28d407b2acb93b1452097847eb94df12"><div class="ttname"><a href="class_brick_board.html#a28d407b2acb93b1452097847eb94df12">BrickBoard::draw</a></div><div class="ttdeci">void draw(SDL_Renderer *r, int rows, int cols)</div></div>
 <div class="ttc" id="aclass_brick_board_html_a51338202b156746437eb1025d5885857"><div class="ttname"><a href="class_brick_board.html#a51338202b156746437eb1025d5885857">BrickBoard::BrickBoard</a></div><div class="ttdeci">BrickBoard()</div></div>
 <div class="ttc" id="aclass_brick_board_html_a63cd8631df047fffd8e5fc6be7b8406e"><div class="ttname"><a href="class_brick_board.html#a63cd8631df047fffd8e5fc6be7b8406e">BrickBoard::update</a></div><div class="ttdeci">void update(float deltaTiem)</div></div>
 <div class="ttc" id="aclass_brick_board_html_abfa2959d1c09a3fdd50431a15cf2d34c"><div class="ttname"><a href="class_brick_board.html#abfa2959d1c09a3fdd50431a15cf2d34c">BrickBoard::populateBoard</a></div><div class="ttdeci">void populateBoard(std::string const &amp;filePath)</div></div>
-<div class="ttc" id="aclass_brick_board_html_ae29ccbfaddd7dbdb4c02e38bd5980389"><div class="ttname"><a href="class_brick_board.html#ae29ccbfaddd7dbdb4c02e38bd5980389">BrickBoard::draw</a></div><div class="ttdeci">void draw(SDL_Renderer *r)</div></div>
 <div class="ttc" id="aclass_brick_html"><div class="ttname"><a href="class_brick.html">Brick</a></div><div class="ttdoc">This class represents a single brick in the game.</div><div class="ttdef"><b>Definition:</b> gameObjects.hpp:353</div></div>
 <div class="ttc" id="aclass_brick_html_a14d7476f435bd6392e7c210fec1fe6d2"><div class="ttname"><a href="class_brick.html#a14d7476f435bd6392e7c210fec1fe6d2">Brick::draw</a></div><div class="ttdeci">void draw(SDL_Renderer *r)</div></div>
 <div class="ttc" id="aclass_brick_html_a23bbb1506cbbcd8acd1ae7b4ad5a2c6d"><div class="ttname"><a href="class_brick.html#a23bbb1506cbbcd8acd1ae7b4ad5a2c6d">Brick::brickScore</a></div><div class="ttdeci">Uint8 brickScore</div><div class="ttdef"><b>Definition:</b> gameObjects.hpp:356</div></div>

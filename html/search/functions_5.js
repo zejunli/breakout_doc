@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['iscollisionwithbrick_101',['isCollisionWithBrick',['../class_s_d_l_breakout.html#ae39778e50995f358837cd411760d3f97',1,'SDLBreakout']]],
-  ['iscollisionwithpaddle_102',['isCollisionWithPaddle',['../class_s_d_l_breakout.html#ac7d5572f065dc17b793b4de84b73da51',1,'SDLBreakout']]],
-  ['iscollisionwithwall_103',['isCollisionWithWall',['../class_s_d_l_breakout.html#a08f2f14f1ac67d63213b0fd601ceea74',1,'SDLBreakout']]]
+  ['handlecollisionwithbrick_99',['handleCollisionWithBrick',['../class_ball.html#a15d9395b828bcc1ad5c751ae820117d8',1,'Ball']]],
+  ['handlecollisionwithpaddle_100',['handleCollisionWithPaddle',['../class_ball.html#aa08615bc50e0f29a45a033fc54755562',1,'Ball']]],
+  ['handlecollisionwithwall_101',['handleCollisionWithWall',['../class_ball.html#a00a8634dfd0bd8b870f647fd2d47188c',1,'Ball']]],
+  ['hasresource_102',['hasResource',['../class_resource_manager.html#a2c9b3925176c310a80faf400b10b4f1b',1,'ResourceManager']]]
 ];

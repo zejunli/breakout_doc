@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['paddle_109',['Paddle',['../class_paddle.html#a53895671ddfde9ba668546065ec4f164',1,'Paddle::Paddle()'],['../class_paddle.html#a29a6a3befce851077b2895d371981619',1,'Paddle::Paddle(Vec pos, Vec v)']]],
-  ['playerattribute_110',['PlayerAttribute',['../class_player_attribute.html#a7d32485d30ca3a707db1d59e13b21bb9',1,'PlayerAttribute::PlayerAttribute()'],['../class_player_attribute.html#a1b908a0a8d72fcd8dd6ad9b2800a87e1',1,'PlayerAttribute::PlayerAttribute(Vec vecScore, Vec vecLives, SDL_Renderer *r, TTF_Font *f)']]],
-  ['populateboard_111',['populateBoard',['../class_brick_board.html#abfa2959d1c09a3fdd50431a15cf2d34c',1,'BrickBoard']]],
-  ['processinput_112',['processInput',['../class_s_d_l_breakout.html#ad0cce856cc0856e4937138cb1141bf39',1,'SDLBreakout']]]
+  ['operator_2a_108',['operator*',['../class_vec.html#a85122410eb2e38c9b124c89a4c6c9d2c',1,'Vec']]],
+  ['operator_2b_109',['operator+',['../class_vec.html#a5d61a15c554890a69339c6fa3c6a89bd',1,'Vec']]],
+  ['operator_2b_3d_110',['operator+=',['../class_vec.html#a00b5ce595d201ec00edf6328e58977c1',1,'Vec']]]
 ];

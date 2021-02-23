@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7esdlbreakout_124',['~SDLBreakout',['../class_s_d_l_breakout.html#a174210104adcb6f27360f7a457f1a7ed',1,'SDLBreakout']]]
+  ['vec_125',['Vec',['../class_vec.html#aefd6dd5ca241f55cdc5548e4c02dc187',1,'Vec::Vec()'],['../class_vec.html#a80abcf142b2f81805d463274ff7f6b37',1,'Vec::Vec(float X, float Y)']]]
 ];
